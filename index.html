@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGIN FORM</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>LOGIN HERE</h1>
+      <div class="input-div">
+        <i class="fa fa-envelope-o"></i>
+        <input type="Email" placeholder="Email id" />
+      </div>
+      <div class="input-div">
+        <i class="fa fa-key"></i>
+        <input type="password" placeholder="password" id="password" />
+
+        <span class="eye" onclick="hideShow()">
+          <i class="fa fa-eye" id="show"></i>
+          <i class="fa fa-eye-slash" id="hide"></i>
+        </span>
+      </div>
+      <button type="submit" class="btn">LOGIN</button>
+    </div>
+    <script>
+      function hideShow() {
+        const passwordInput = document.getElementById("password");
+        const showPassword = document.getElementById("show");
+        const hidePassword = document.getElementById("hide");
+
+        if (password.type === "password") {
+          passwordInput.type = "text";
+          showPassword.style.display = "block";
+          hidePassword.style.display = "none";
+        } else {
+          passwordInput.type = "password";
+          showPassword.style.display = "none";
+          hidePassword.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
